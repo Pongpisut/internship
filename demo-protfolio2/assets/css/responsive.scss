@@ -1,0 +1,384 @@
+$colors-red: #f10909;
+$colors-blue: #1446a0;
+$colors-gray: #fbfbfb;
+$colors-white: #fff;
+$colors-textgray: #a7a7a7;
+$colors-dark: #222;
+$fonts: "Prompt", sans-serif;
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  #bg-header {
+    .box-search {
+      padding-left: 10px;
+      .form-controls {
+        margin-top: 15px;
+        width: 280px !important;
+      }
+      .options-checks {
+        .check-box2 {
+          display: block;
+        }
+      }
+    }
+  }
+  #submenus {
+    .loop-submenu {
+      display: block;
+      margin-top: -5.8em !important;
+    }
+  }
+  #food-saveprice {
+    .grid-saveprice1,
+    .grid-saveprice2 {
+      .sec-food1,
+      .sec-food2,
+      .sec-food3,
+      .sec-food4 {
+        .box-food {
+          .name-food {
+            font-size: 15px !important;
+          }
+          .sale-price {
+            margin-top: 40px !important;
+            font-size: 15px !important;
+          }
+          .price {
+            margin-top: 65px !important;
+            font-size: 15px !important;
+          }
+        }
+      }
+    }
+  }
+  #top-store {
+    .grid-topstore {
+      .box-store {
+        .box-logostore {
+          margin-left: 8em !important;
+        }
+        .box-logostore1 {
+          margin-left: 8.4em !important;
+        }
+        .star {
+          margin-left: 6.5em !important;
+        }
+      }
+    }
+  }
+  #email {
+    .grid-email {
+      .form-controls {
+        width: 86% !important;
+      }
+      .box-btnemail {
+        .btn-email {
+          height: 60px !important;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  #submenus {
+    .loop-submenu {
+      display: block;
+      margin-top: 26.4em !important;
+    }
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  #bg-header {
+    .box-search {
+      padding-left: 10px;
+      .form-controls {
+        width: 270px !important;
+      }
+      .options-checks {
+        .check-box2 {
+          display: block;
+        }
+      }
+    }
+  }
+  #submenus {
+    .loop-submenu {
+      display: block;
+      margin-top: 28em !important;
+    }
+  }
+  #top-store {
+    .grid-topstore {
+      .box-store {
+        .box-logostore {
+          margin-left: 13em !important;
+        }
+        .box-logostore1 {
+          margin-left: 13.4em !important;
+        }
+        .star {
+          margin-left: 11.2em !important;
+        }
+      }
+    }
+  }
+  #email {
+    .grid-email {
+      .form-controls {
+        width: 90% !important;
+      }
+    }
+  }
+  #footer {
+    padding-bottom: 0 !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #bg-header {
+    .box-search {
+      padding-left: 10px;
+      .form-controls {
+        width: 500px !important;
+      }
+    }
+  }
+  #submenus {
+    .loop-submenu {
+      display: block;
+      margin-top: 34em !important;
+    }
+  }
+  #orderprocess {
+    .grid-stepsorder {
+      display: grid;
+      grid-template-columns: 1fr;
+      .box-step1 {
+        margin-left: 50% !important;
+        transform: translateX(-50%) !important;
+        .other-step {
+          text-align: center;
+        }
+      }
+    }
+  }
+  #top-store {
+    .grid-topstore {
+      .box-store {
+        .box-logostore {
+          margin-left: -25.6em !important;
+          margin-top: 26.5em !important;
+        }
+        .box-logostore1 {
+          margin-left: -25.2em !important;
+          margin-top: 26.8em !important;
+        }
+        .star {
+          margin-left: 20em !important;
+        }
+      }
+    }
+  }
+  #email {
+    .grid-email {
+      .form-controls {
+        width: 94% !important;
+      }
+    }
+  }
+  #gallery {
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr) !important;
+      img.img-gallery {
+        min-height: 150px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    display: block;
+    .logo {
+      width: 40px;
+      height: auto;
+      max-width: 100%;
+      padding: 20px;
+      display: block;
+    }
+    .toggles {
+      display: inline-block;
+      cursor: pointer;
+      float: right;
+      margin-right: 15px;
+      margin-top: -60px;
+    }
+    ul {
+      background-color: $colors-gray;
+      margin-top: -1em;
+      display: none;
+      li {
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+  #bg-header {
+    .bg-header {
+      width: 100%;
+    }
+    .box-search {
+      padding-left: 10px;
+      .name-search {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      .form-controls {
+        width: 155px;
+        max-width: auto;
+      }
+      .options-checks {
+        padding-left: 15px;
+        .check1-box,
+        .check2-box,
+        .check3-box {
+          display: block;
+        }
+      }
+    }
+  }
+  #submenus {
+    .loop-submenu {
+      display: block;
+      margin-top: 25em;
+    }
+  }
+  #orderprocess {
+    .grid-stepsorder {
+      display: grid;
+      grid-template-columns: 1fr;
+      .box-step1 {
+        margin-bottom: 4em;
+        margin-left: 40%;
+        transform: translateX(-40%);
+        .other-step {
+          text-align: center;
+        }
+      }
+    }
+  }
+  #food-saveprice {
+    .grid-saveprice1,
+    .grid-saveprice2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      .sec-food1,
+      .sec-food2,
+      .sec-food3,
+      .sec-food4 {
+        .logo-top2 {
+          margin-left: 15px;
+        }
+        .catalog-name1 {
+        }
+        .box-food {
+          .food1 {
+            width: auto;
+          }
+          .name-food {
+            margin-left: 10px;
+          }
+          .sub-namefood {
+            display: none;
+          }
+          .sale-price {
+            margin-left: 10px;
+            margin-top: 47px;
+          }
+          .price {
+            margin-left: 10px;
+            margin-top: 70px;
+          }
+        }
+      }
+    }
+  }
+  #top-store {
+    .grid-topstore {
+      display: grid;
+      grid-template-columns: 1fr;
+      .box-store {
+        .box-logostore {
+          margin-left: 145px;
+        }
+        .box-logostore1 {
+          margin-left: 151px;
+        }
+        .star {
+          margin-left: 7.5em;
+        }
+      }
+    }
+  }
+  #note {
+    .grid-note {
+      display: grid;
+      grid-template-columns: 1fr;
+      .box-note {
+        .datetimes {
+          padding-left: 10px;
+        }
+        .name-post {
+          padding-left: 10px;
+        }
+        .content-post {
+          padding-left: 10px;
+        }
+        .read-more {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  #email {
+    padding-bottom: 30px;
+    .grid-email {
+      display: grid;
+      grid-template-columns: 1fr;
+      .form-controls {
+        width: 300px;
+        max-width: 100%;
+        margin-left: 20px;
+      }
+    }
+  }
+  #contact {
+    .grid-contact {
+      display: grid;
+      grid-template-columns: 1fr;
+      .logo-contact {
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+      .box-namesite {
+        padding: 5px;
+        margin-top: -5px;
+      }
+      .box-line {
+        margin-top: -5px;
+      }
+      .box-facebook {
+        margin-top: -10px;
+      }
+    }
+  }
+  #gallery {
+    .grid-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  #footer {
+    padding-bottom: 40px;
+  }
+}

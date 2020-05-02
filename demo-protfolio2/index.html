@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugin/OwlCarousel2/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/plugin/OwlCarousel2/css/owl.theme.default.min.css"
+    />
+    <title>Steak</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <img src="assets/img/logo.png" class="logo" alt="" />
+          <div class="toggles" onclick="Showmenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <ul>
+            <li>
+              <a href="#">หน้าแรก</a>
+              <a href="#">ขั้นตอนการสั่งซื้อ</a>
+              <a href="#">อาหารราคาพิเศษ</a>
+              <a href="#">ร้านเด่นประจำเดือน</a>
+              <a href="#">บทความ</a>
+              <a href="#">ติดต่อเรา</a>
+            </li>
+          </ul>
+          <div class="btn-header">
+            <button class="btn-sendfood">
+              <i class="fas fa-cart-plus"></i> สั่งอาหารออนไลน์
+            </button>
+            <button class="btn-pricefood">
+              <i class="fas fa-shopping-basket"></i> 250.0 บาท
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="bg-header">
+      <img src="assets/img/bg-header.png" class="bg-header" alt="" />
+      <div class="container">
+        <div class="box-search">
+          <h1 class="name-search">ค้นหาอาหารที่ต้องการ</h1>
+          <div class="select-search">
+            <select class="selcect-store">
+              <option value="store1">ค้นหาตามชื่ออาหาร</option>
+              <option value="store2">ค้นหาตามชื่อร้าน</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            class="form-controls"
+            autocomplete="off"
+            placeholder="ใส่ชื่ออาหารหรือชื่อเซฟที่ท่านต้องการ"
+          />
+          <div class="options-checks">
+            <div class="check-box1">
+              <input type="checkbox" class="check1" name="check1" />
+              <label for="check1"> เลือกทุกร้านอาหาร</label>
+            </div>
+            <div class="check-box2">
+              <input type="checkbox" class="check2" name="check2" />
+              <label for="check1"> เฉพาะร้านอาหารที่จดทะเบียน</label>
+            </div>
+            <div class="check-box3">
+              <input type="checkbox" class="check3" name="check3" />
+              <label for="check3"> ร้านอาหารที่ไม่ได้จดทะเบียน</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="submenus">
+      <div class="container">
+        <div class="loop-submenu owl-carousel">
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/coffee.png" class="img-submenu" alt="" />
+              <p class="name-submenu">กาแฟ</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/cake.png" class="img-submenu" alt="" />
+              <p class="name-submenu">เค้ก</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/tea.png" class="img-submenu" alt="" />
+              <p class="name-submenu">ชา</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/noodles.png" class="img-submenu" alt="" />
+              <p class="name-submenu">ก๋วยเตี๋ยว</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/juice.png" class="img-submenu" alt="" />
+              <p class="name-submenu">น้ำผลไม้</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/hamburger.png" class="img-submenu" alt="" />
+              <p class="name-submenu">แฮมเบอร์เกอร์</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/icecream.png" class="img-submenu" alt="" />
+              <p class="name-submenu">ไอศกรีม</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/shushi.png" class="img-submenu" alt="" />
+              <p class="name-submenu">ซูซิ</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/milk.png" class="img-submenu" alt="" />
+              <p class="name-submenu">นม</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/donut.png" class="img-submenu" alt="" />
+              <p class="name-submenu">โดนัท</p>
+            </a>
+          </div>
+          <div class="items-menu">
+            <a href="#">
+              <img src="assets/img/pizza.png" class="img-submenu" alt="" />
+              <p class="name-submenu">พิชซ่า</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="orderprocess">
+      <div class="container">
+        <img src="assets/img/img-top.png" class="logo-top" alt="" />
+        <h1 class="name-orderprocess">ขั้นตอนการสั่งซื้อ</h1>
+        <p class="sub-orderprocess">
+          ขั้นตอนการสั่งซื้อมีทั้งหมด 4 ขั้นตอน ดังนี้
+        </p>
+        <div class="grid-stepsorder">
+          <div class="box-step1">
+            <div class="box-step2">
+              <div class="circle-step">
+                <span class="number-step">1</span>
+                <span class="text-step">ขั้นตอน</span>
+              </div>
+              <img src="assets/img/step-1.png" alt="" />
+            </div>
+            <p class="other-step">เลือกอาหารที่ท่านชื่นชอบ</p>
+          </div>
+          <div class="box-step1">
+            <div class="box-step2">
+              <div class="circle-step">
+                <span class="number-step">2</span>
+                <span class="text-step">ขั้นตอน</span>
+              </div>
+              <img src="assets/img/step-2.png" alt="" />
+            </div>
+            <p class="other-step">รอการจัดส่ง</p>
+          </div>
+          <div class="box-step1">
+            <div class="box-step2">
+              <div class="circle-step">
+                <span class="number-step">3</span>
+                <span class="text-step">ขั้นตอน</span>
+              </div>
+              <img src="assets/img/step-3.png" alt="" />
+            </div>
+            <p class="other-step">รับของและจ่ายเงิน</p>
+          </div>
+          <div class="box-step1">
+            <div class="box-step2">
+              <div class="circle-step">
+                <span class="number-step">4</span>
+                <span class="text-step">ขั้นตอน</span>
+              </div>
+              <img src="assets/img/step-4.png" alt="" />
+            </div>
+            <p class="other-step">มีความสุขกับการรับประทานอาหาร</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="food-saveprice">
+      <div class="container">
+        <img src="assets/img/img-top.png" class="logo-top" alt="" />
+        <h1 class="name-saveprice">อาหารราคาพิเศษ</h1>
+        <p class="sub-saveprice">
+          อาหารที่ลดราคาพิเศษในแต่ละเดือน
+        </p>
+        <div class="grid-saveprice1">
+          <div class="sec-food1">
+            <img src="assets/img/img-top2.png" class="logo-top2" alt="" />
+            <h1 class="catalog-name1">อาหารคาว</h1>
+            <div class="box-food">
+              <img src="assets/img/food-1.png" class="food1" alt="" />
+              <p class="name-food">อาหารคาวชิ้นที่ 1</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-2.png" class="food1" alt="" />
+              <p class="name-food">อาหารคาวชิ้นที่ 2</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-3.png" class="food1" alt="" />
+              <p class="name-food">อาหารคาวชิ้นที่ 3</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+          </div>
+          <div class="sec-food2">
+            <img src="assets/img/img-top2.png" class="logo-top2" alt="" />
+            <h1 class="catalog-name1">อาหารคาว</h1>
+            <div class="box-food">
+              <img src="assets/img/food-4.png" class="food1" alt="" />
+              <p class="name-food">อาหารหวานชิ้นที่ 1</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-5.png" class="food1" alt="" />
+              <p class="name-food">อาหารหวานชิ้นที่ 2</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-6.png" class="food1" alt="" />
+              <p class="name-food">อาหารหวานชิ้นที่ 3</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid-saveprice2">
+          <div class="sec-food3">
+            <img src="assets/img/img-top2.png" class="logo-top2" alt="" />
+            <h1 class="catalog-name1">อาหารว่าง</h1>
+            <div class="box-food">
+              <img src="assets/img/food-7.png" class="food1" alt="" />
+              <p class="name-food">อาหารว่างชิ้นที่ 1</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-8.png" class="food1" alt="" />
+              <p class="name-food">อาหารว่างชิ้นที่ 2</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-9.png" class="food1" alt="" />
+              <p class="name-food">อาหารว่างชิ้นที่ 3</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+          </div>
+          <div class="sec-food4">
+            <img src="assets/img/img-top2.png" class="logo-top2" alt="" />
+            <h1 class="catalog-name1">เครื่องดื่ม</h1>
+            <div class="box-food">
+              <img src="assets/img/food-10.png" class="food1" alt="" />
+              <p class="name-food">เครื่องดื่มชิ้นที่ 1</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-11.png" class="food1" alt="" />
+              <p class="name-food">เครื่องดื่มชิ้นที่ 2</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+            <div class="box-food">
+              <img src="assets/img/food-12.png" class="food1" alt="" />
+              <p class="name-food">เครื่องดื่มชิ้นที่ 3</p>
+              <p class="sub-namefood">
+                เป็นอาหารมื้อหนักทำให้อิ่มไปหลายชั่วโมง
+              </p>
+              <span class="sale-price">150 บาท</span>
+              <span class="price">ลดเหลือ 130 บาท</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="top-store">
+      <div class="container">
+        <img src="assets/img/img-top.png" class="logo-top" alt="" />
+        <h1 class="name-topstore">ร้านเด่นประจำเดือน</h1>
+        <p class="sub-topstore">
+          เรารวบรวมร้านอาหารเด่นประจำเดือนไว้ที่นี่
+        </p>
+        <div class="grid-topstore">
+          <div class="box-store">
+            <img src="assets/img/store-1.png" class="img-store" alt="" />
+            <span class="box-logostore"></span>
+            <span class="box-logostore1"
+              ><img src="assets/img/img-store.png" alt=""
+            /></span>
+            <h1 class="name-storebox">ร้านบาร์บีคิวร์เลิฟเวอร์</h1>
+            <p class="sub-storebox">หมวดหมู่อาหาร : บาร์บีคิวร์ พิซซ่า</p>
+            <div class="star">
+              <span class="rate1"><i class="fas fa-star starrate"></i></span>
+              <span class="rate2"><i class="fas fa-star starrate"></i></span>
+              <span class="rate3"><i class="fas fa-star starrate"></i></span>
+              <span class="rate4"><i class="fas fa-star starrate"></i></span>
+              <span class="rate5"><i class="fas fa-star starrate"></i></span>
+            </div>
+            <button class="btn-topstore">ดูรายละเอียดเพิ่มเติม</button>
+          </div>
+          <div class="box-store">
+            <img src="assets/img/store-2.png" class="img-store" alt="" />
+            <span class="box-logostore"></span>
+            <span class="box-logostore1"
+              ><img src="assets/img/img-store.png" alt=""
+            /></span>
+            <h1 class="name-storebox">ร้านพิชซ่าเลิฟเวอร์</h1>
+            <p class="sub-storebox">หมวดหมู่อาหาร : พิซซ่า</p>
+            <div class="star">
+              <span class="rate1"><i class="fas fa-star starrate"></i></span>
+              <span class="rate2"><i class="fas fa-star starrate"></i></span>
+              <span class="rate3"><i class="fas fa-star starrate"></i></span>
+              <span class="rate4"><i class="fas fa-star starrate"></i></span>
+              <span class="rate5"><i class="fas fa-star starrate"></i></span>
+            </div>
+            <button class="btn-topstore">ดูรายละเอียดเพิ่มเติม</button>
+          </div>
+          <div class="box-store">
+            <img src="assets/img/store-3.png" class="img-store" alt="" />
+            <span class="box-logostore"></span>
+            <span class="box-logostore1"
+              ><img src="assets/img/img-store.png" alt=""
+            /></span>
+            <h1 class="name-storebox">ร้านคัพเค้กเลิฟเวอร์</h1>
+            <p class="sub-storebox">หมวดหมู่อาหาร : ของหวาน เค้ก คัพเค้ก</p>
+            <div class="star">
+              <span class="rate1"><i class="fas fa-star starrate"></i></span>
+              <span class="rate2"><i class="fas fa-star starrate"></i></span>
+              <span class="rate3"><i class="fas fa-star starrate"></i></span>
+              <span class="rate4"><i class="fas fa-star starrate"></i></span>
+              <span class="rate5"><i class="fas fa-star starrate"></i></span>
+            </div>
+            <button class="btn-topstore">ดูรายละเอียดเพิ่มเติม</button>
+          </div>
+          <div class="box-store">
+            <img src="assets/img/store-4.png" class="img-store" alt="" />
+            <span class="box-logostore"></span>
+            <span class="box-logostore1"
+              ><img src="assets/img/img-store.png" alt=""
+            /></span>
+            <h1 class="name-storebox">ร้านสเต็กเลิฟเวอร์</h1>
+            <p class="sub-storebox">หมวดหมู่อาหาร : สเต็ก เฟรนฟราย</p>
+            <div class="star">
+              <span class="rate1"><i class="fas fa-star starrate"></i></span>
+              <span class="rate2"><i class="fas fa-star starrate"></i></span>
+              <span class="rate3"><i class="fas fa-star starrate"></i></span>
+              <span class="rate4"><i class="fas fa-star starrate"></i></span>
+              <span class="rate5"><i class="fas fa-star starrate"></i></span>
+            </div>
+            <button class="btn-topstore">ดูรายละเอียดเพิ่มเติม</button>
+          </div>
+          <div class="box-store">
+            <img src="assets/img/store-5.png" class="img-store" alt="" />
+            <span class="box-logostore"></span>
+            <span class="box-logostore1"
+              ><img src="assets/img/img-store.png" alt=""
+            /></span>
+            <h1 class="name-storebox">ร้านไก่ทอดเลิฟเวอร์</h1>
+            <p class="sub-storebox">หมวดหมู่อาหาร : ไก่ทอด อาหารกล่อง</p>
+            <div class="star">
+              <span class="rate1"><i class="fas fa-star starrate"></i></span>
+              <span class="rate2"><i class="fas fa-star starrate"></i></span>
+              <span class="rate3"><i class="fas fa-star starrate"></i></span>
+              <span class="rate4"><i class="fas fa-star starrate"></i></span>
+              <span class="rate5"><i class="fas fa-star starrate"></i></span>
+            </div>
+            <button class="btn-topstore">ดูรายละเอียดเพิ่มเติม</button>
+          </div>
+          <div class="box-store">
+            <img src="assets/img/store-6.png" class="img-store" alt="" />
+            <span class="box-logostore"></span>
+            <span class="box-logostore1"
+              ><img src="assets/img/img-store.png" alt=""
+            /></span>
+            <h1 class="name-storebox">ร้านสุกกี้ยากี้เลิฟเวอร์</h1>
+            <p class="sub-storebox">หมวดหมู่อาหาร : สุกกี้ อาหารสุขภาพ</p>
+            <div class="star">
+              <span class="rate1"><i class="fas fa-star starrate"></i></span>
+              <span class="rate2"><i class="fas fa-star starrate"></i></span>
+              <span class="rate3"><i class="fas fa-star starrate"></i></span>
+              <span class="rate4"><i class="fas fa-star starrate"></i></span>
+              <span class="rate5"><i class="fas fa-star starrate"></i></span>
+            </div>
+            <button class="btn-topstore">ดูรายละเอียดเพิ่มเติม</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="note">
+      <div class="container">
+        <img src="assets/img/img-top.png" class="logo-top" alt="" />
+        <h1 class="name-note">บทความ</h1>
+        <p class="sub-note">
+          เราได้รวบรวมบทความเกี่ยวกับ อาหาร ร้านอาหารชื่อดังๆต่างๆเอาไว้
+        </p>
+        <div class="grid-note">
+          <div class="box-note">
+            <img src="assets/img/note-1.png" alt="" />
+            <span class="datetimes">23 เมษายน 2563</span>
+            <h1 class="name-post">การทำขนมหวานไว้กินยามว่าง</h1>
+            <p class="content-post">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์
+              มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจ
+              ดังกล่าวมาตั้งแต่ศตวรรษที่
+            </p>
+            <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-note">
+            <img src="assets/img/note-2.png" alt="" />
+            <span class="datetimes">23 เมษายน 2563</span>
+            <h1 class="name-post">การทำขนมหวานไว้กินยามว่าง</h1>
+            <p class="content-post">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์
+              มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจ
+              ดังกล่าวมาตั้งแต่ศตวรรษที่
+            </p>
+            <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-note">
+            <img src="assets/img/note-3.png" alt="" />
+            <span class="datetimes">23 เมษายน 2563</span>
+            <h1 class="name-post">การทำขนมหวานไว้กินยามว่าง</h1>
+            <p class="content-post">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์
+              มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจ
+              ดังกล่าวมาตั้งแต่ศตวรรษที่
+            </p>
+            <a href="#" class="read-more">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+        <button class="btn-allnote">ดูบทความทั้งหมด</button>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="email">
+      <div class="container">
+        <div class="grid-email">
+          <div class="box-textemail">
+            <h1 class="name-email">ติดตามเรา</h1>
+            <p class="sub-email">ติดตามเราเพื่อรับข้อมูลข่าวสาร</p>
+          </div>
+          <input
+            type="text"
+            class="form-controls"
+            autocomplete="off"
+            placeholder="กรุณากรอกอีเมลของท่าน"
+          />
+          <div class="box-btnemail">
+            <button class="btn-email">
+              <i class="fas fa-envelope"></i> สมัครรับข้อมูลข่าวสาร
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="contact">
+      <div class="container">
+        <div class="grid-contact">
+          <img src="assets/img/logo.png" class="logo-contact" alt="" />
+          <div class="box-namesite">
+            <p class="name-site">DEMO PORTFOLIO BY.PONGPISUT SUAYROOP</p>
+          </div>
+          <div class="box-line">
+            <p class="line"><i class="fab fa-line"></i> Ihakeesuimaks15</p>
+          </div>
+          <div class="box-facebook">
+            <p class="facebook">
+              <i class="fab fa-facebook-square"></i> Pongpisut Suayroop
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="gallery">
+      <div class="grid-gallery">
+        <img src="assets/img/gallery-1.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-2.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-3.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-4.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-5.png" class="img-gallery" alt="" />
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="footer">
+      <div class="container">
+        <p class="name-footer">
+          DEMO PORTFOLIO - © Copyright 2020. All Rights Reserved.
+        </p>
+        <div id="toTop">
+          <i class="fa fa-chevron-up"></i><span>ขี้นบนสุด</span>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="assets/plugin/OwlCarousel2/owl.carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
