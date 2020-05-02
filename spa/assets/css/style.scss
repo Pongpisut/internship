@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+// 
+$fontweb: 'Kanit',
+sans-serif;
+$green: #71BD1F;
+$orange: #E4761F;
+$gray: #F0F0F0;
+$black: #333333;
+
+a {
+    text-decoration: none !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontweb;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+// Header
+#header-firstnav {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    border-top: 3px solid $green;
+    border-bottom: 1px solid $gray;
+}
+
+#header-firstnav {
+    .menu-top {
+        margin-right: 15px;
+        border-right: 1px solid $gray;
+        padding-right: 15px;
+    }
+}
+
+#header-firstnav {
+    .menu-top:last-child {
+        border-right: none !important;
+    }
+}
+
+#header-firstnav {
+    .text-headertop {
+        font-size: 15px;
+        color: $black;
+        margin-top: 5px;
+    }
+}
+
+#header-firstnav {
+    span {
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.logo-header {
+    width: 70px;
+}
+
+.bg-light {
+    background: #fff !important;
+}
+
+.search-img {
+    margin-top: .4em;
+    margin-left: .5em;
+}
+
+.search-menu {
+    margin-right: 15px;
+    border-right: 1px solid $gray;
+    padding-right: 15px;
+}
+
+// Bg Header
+#bg-header {
+    width: 100%;
+    height: 100%;
+}
+
+// AboutMe
+#aboutme {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-about.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    .content-aboutme {
+        color: $black;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+
+
+        .aboutme-en {
+            color: $orange;
+            font-weight: bold;
+        }
+
+        .aboutme-other {
+            text-indent: 50px;
+            text-align: left;
+            text-align: justify;
+        }
+    }
+
+    .underline {
+        background: $green;
+        height: 3px;
+    }
+
+    .sell-course {
+        width: 100%;
+        height: auto;
+
+        .list-group-item {
+            color: $black !important;
+        }
+
+    }
+}
+
+// CourseMe
+#course-me {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-course.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding-bottom: 5em;
+
+    .head-course {
+        color: #fff;
+        margin-top: 7rem;
+    }
+
+    .courseme-en {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .underline-courseme {
+        width: 50%;
+        background-color: #fff;
+        height: 3px;
+    }
+
+    .box-course {
+        margin-top: 2.5em;
+        cursor: pointer;
+
+        .name-course {
+            color: $black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .price-course {
+            color: $green;
+        }
+
+        .text-course {
+            color: $black;
+        }
+    }
+}
+
+// gallery
+
+#gallery {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/bg-gallery.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 5em;
+    background-size: cover;
+
+    .head-gallery {
+        color: $black;
+        margin-top: 7rem;
+    }
+
+    .namegallery-en {
+        color: $orange;
+    }
+
+    .underline {
+        background: $green;
+        height: 3px;
+        width: 50%;
+    }
+
+    .gallery-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .image {
+        flex: 20%;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: .4s;
+        }
+
+        &:hover img {
+            transform: scale(1.4) rotate(15deg);
+            opacity: .7;
+        }
+    }
+
+
+}
+
+.lightbox img {
+    width: 100%;
+    border-radius: 0;
+    margin-top: -2.4em;
+}
+
+.lightbox {
+
+    &:before {
+        width: 100%;
+        position: relative;
+        top: 40%;
+        margin-left: -.5em;
+        opacity: 0;
+        color: #fff;
+        font-size: 26px;
+        content: 'ดูทั้งหมด';
+        pointer-events: none;
+        z-index: 9000;
+        transition: 0.4s;
+    }
+
+    &:after {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        content: '';
+        transition: 0.4s;
+    }
+
+    &:hover:after {
+        opacity: .8;
+    }
+
+    &:hover:before {
+        opacity: .8;
+    }
+}
+
+
+
+
+// Footer1
+#footer1 {
+    width: 100%;
+    margin-top: .7em;
+    height: auto;
+    background-color: #FCF8F8;
+
+    .logo-footer {
+        margin-right: 15px;
+        border-right: 1px solid $gray;
+        padding-right: 15px;
+        margin-top: .5rem;
+    }
+
+    .text-footer1 {
+        color: $black;
+        text-align: center;
+    }
+
+    .address {
+        margin-top: 3em;
+        color: $black;
+    }
+
+    .contact {
+        margin-top: 3em;
+        color: $black;
+
+        .text-contact {
+            text-indent: 5px;
+        }
+
+        .text-contact2 {
+            text-indent: 40px;
+        }
+    }
+
+    .img-footer-logo {
+        width: 50%;
+    }
+
+    .icon-footer {
+        width: 22px;
+    }
+}
+
+// footer2
+#footer2 {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    background: $green;
+    text-align: center;
+    padding: 1.2em 1.2em;
+}

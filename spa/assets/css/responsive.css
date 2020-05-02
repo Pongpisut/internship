@@ -1,0 +1,261 @@
+@media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
+
+    /*  */
+    .text-headertop {
+        font-size: 15px;
+    }
+
+    .text-date {
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+
+    .gallery-box .image {
+        flex: 40% !important;
+    }
+
+    p.text-footer1 {
+        font-size: 20px;
+    }
+
+    span.text-address {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    span.text-address2 {
+        font-size: 15px;
+    }
+
+    p.text-contact {
+        font-size: 15px;
+    }
+
+    p.text-contact2 {
+        font-size: 15px;
+    }
+
+    .lightbox img {
+        height: 150px !important;
+        padding-top: 14.5px;
+    }
+
+}
+
+@media only screen and (min-device-width : 376px) and (max-device-width : 425px) {
+
+    /*  */
+    .text-headertop {
+        margin-left: 1rem;
+    }
+
+    .text-date {
+        margin-left: 3.4rem;
+    }
+
+    p.text-footer1 {
+        font-size: 20px;
+    }
+
+    span.text-address {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    span.text-address2 {
+        font-size: 15px;
+    }
+
+    p.text-contact {
+        font-size: 15px;
+    }
+
+    p.text-contact2 {
+        font-size: 15px;
+    }
+
+    img.icon-footer {
+        width: 20px;
+    }
+
+    .gallery-box .image {
+        flex: 40% !important;
+    }
+
+    #footer1 .contact {
+        margin-top: 2em;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+    #gallery {
+        background-position: center center;
+    }
+
+
+    #footer1 .address {
+        margin-top: 5rem;
+    }
+
+    #footer1 .address {
+        margin-top: 2em;
+    }
+
+    #footer1 .contact {
+        margin-top: 1em;
+    }
+
+    .text-contact img {
+        width: 20px;
+    }
+
+    .img-footer-logo {
+        width: 50px;
+        height: 150px;
+    }
+
+}
+
+
+@media only screen and (max-width : 768px) and (min-width: 600px) {
+
+    /*  */
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .text-address,
+    .text-contact,
+    .text-footer1 {
+        font-size: 13px;
+    }
+
+    .text-address2 {
+        font-size: 12px;
+    }
+
+    .text-contact2 {
+        font-size: 13px;
+        margin-left: -12px;
+    }
+
+    .icon-footer {
+        width: 16px !important;
+    }
+
+    #footer1 .logo-footer {
+        margin-top: 2em;
+    }
+
+    .text-course {
+        font-size: 13px;
+    }
+
+
+    .gallery-box .image {
+        flex: 20%;
+    }
+
+    .lightbox:before {
+        top: 40%;
+        font-size: 16px;
+    }
+
+    .lightbox img {
+        height: 205px !important;
+        padding-top: 14.5px;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+    /*  */
+    .text-date {
+        font-size: 14px;
+    }
+
+    .text-headertop {
+        font-size: 14px;
+    }
+
+    .menu-top img {
+        width: 15px;
+    }
+
+    .gallery-box .image {
+        flex: 40% !important;
+    }
+
+    p.text-footer1 {
+        font-size: 20px;
+    }
+
+    span.text-address {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    span.text-address2 {
+        font-size: 15px;
+    }
+
+    p.text-contact {
+        font-size: 15px;
+    }
+
+    p.text-contact2 {
+        font-size: 15px;
+    }
+
+    .lightbox img {
+        height: 150px !important;
+        padding-top: 14.5px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    /*  */
+}
+
+@media only screen and (max-width : 1280px) and (min-width:1024px) {
+
+    /*  */
+
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+    /*  */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    /*  */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
