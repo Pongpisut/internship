@@ -1,0 +1,950 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.open {
+  height: auto !important;
+  display: block !important;
+}
+
+.navbar-top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.navbar-top .navbartop-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-top .navbartop-right li {
+  list-style: none;
+  padding-right: 15px;
+}
+
+.navbar-top .navbartop-right li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.navbar-top .navbartop-right li a:hover {
+  color: #f10909;
+}
+
+.navbar-top .navbartop-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar-top .navbartop-left li {
+  list-style: none;
+  padding-right: 15px;
+}
+
+.navbar-top .navbartop-left li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.navbar-top .navbartop-left li a:hover {
+  color: #f10909;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #ffe21f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -5px;
+}
+
+.navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .nav .toggles {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar .nav .toggles .bar1,
+.navbar .nav .toggles .bar2,
+.navbar .nav .toggles .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #f10909;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .nav .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.navbar .nav .change .bar2 {
+  opacity: 0;
+}
+
+.navbar .nav .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -5px);
+          transform: rotate(45deg) translate(-8px, -5px);
+}
+
+.navbar .nav .dropdown {
+  color: #222;
+  text-decoration: none;
+  margin-left: 30px;
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffe21f;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.navbar .nav .dropdown-content li {
+  list-style: none;
+  padding: 10px;
+}
+
+.navbar .nav .dropdown-content li a {
+  color: #222;
+  text-decoration: none;
+}
+
+.navbar .nav .dropdown-content li:hover {
+  background-color: #f10909;
+}
+
+.navbar .nav .dropdown-content li:hover a {
+  color: #fbfbfb;
+}
+
+.navbar .nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .nav .img-logo {
+  margin-top: 10px;
+}
+
+.navbar .nav .form-controls {
+  border: 0;
+  padding: 15px;
+  border-radius: 2px;
+  font-family: "Prompt";
+  width: 40%;
+  height: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.navbar .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar .nav ul li {
+  display: block;
+  list-style: none;
+  padding: 3px 3px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.navbar .nav ul li a {
+  text-decoration: none;
+  color: #222;
+}
+
+.navbar .nav ul li a:hover {
+  color: #f10909;
+}
+
+#bg-hero {
+  width: 100%;
+  height: 100%;
+}
+
+#bg-hero .img-bghero {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  position: relative;
+}
+
+#bg-hero .name-hero {
+  position: absolute;
+  top: 40%;
+  left: 17.5%;
+  -webkit-transform: translateX(-17.5%);
+          transform: translateX(-17.5%);
+  font-size: 3em;
+  color: #fbfbfb;
+}
+
+#bg-hero .checksbox-option {
+  position: absolute;
+  top: 55%;
+  left: 17.5%;
+  -webkit-transform: translateX(-17.5%);
+          transform: translateX(-17.5%);
+  color: #fbfbfb;
+}
+
+#bg-hero .box-search {
+  position: absolute;
+  top: 60%;
+  left: 22%;
+  -webkit-transform: translateX(-22%);
+          transform: translateX(-22%);
+}
+
+#bg-hero .box-search .form-controls {
+  width: auto;
+  padding: 10px;
+  height: 15px;
+  border: 0;
+  border-radius: 2px;
+  font-family: "Prompt";
+}
+
+#bg-hero .btn-search {
+  position: absolute;
+  top: 67%;
+  left: 14.5%;
+  -webkit-transform: translateX(-14.5%);
+          transform: translateX(-14.5%);
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  font-family: "Prompt";
+  border: 0;
+  background-color: #f10909;
+  color: #fbfbfb;
+}
+
+#bg-hero .btn-search:hover {
+  background-color: #e20606;
+}
+
+#text-hero {
+  width: 100%;
+  height: 100px;
+  background-color: #ffe21f;
+  margin-top: 0;
+  margin-top: -10px;
+}
+
+#text-hero .grid-texthero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 1fr 100px 1fr 100px 1fr;
+      grid-template-columns: 100px 1fr 100px 1fr 100px 1fr;
+}
+
+#text-hero .grid-texthero .icon-checks {
+  margin-top: 10%;
+  font-size: 3em;
+  color: #f10909;
+}
+
+#text-hero .grid-texthero .box-texthero .text-headhero {
+  font-size: 19px;
+  margin-top: 15px;
+}
+
+#text-hero .grid-texthero .box-texthero .sub-textheadhero {
+  color: #f10909;
+  margin-top: -20px;
+  font-size: 15px;
+}
+
+#hotel {
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+}
+
+#hotel .box-tophotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hotel .box-tophotel .text-hotel {
+  display: inline;
+}
+
+#hotel .box-tophotel .btn-hotel {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  width: 150px;
+  padding: 10px;
+  height: 50px;
+  color: #222;
+  border: 3px solid #ffe21f;
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: "Prompt";
+  font-size: 15px;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hotel .box-tophotel .btn-hotel:hover {
+  background-color: #ffe21f;
+}
+
+#hotel .grid-hotel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#hotel .grid-hotel .box-hotel {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  -webkit-box-shadow: -3px 0px 5px 0px #e0e0e0;
+  box-shadow: -3px 0px 5px 0px #e0e0e0;
+  padding-bottom: 20px;
+}
+
+#hotel .grid-hotel .box-hotel img.img-hotel {
+  width: 100%;
+  height: auto;
+}
+
+#hotel .grid-hotel .box-hotel .sale-price {
+  position: relative;
+}
+
+#hotel .grid-hotel .box-hotel .sale-price::before {
+  content: "ลด 5%";
+  background-color: #f10909;
+  width: 70px;
+  height: 25px;
+  margin-left: -92px;
+  border: 1px solid #f10909;
+  color: #fbfbfb;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+#hotel .grid-hotel .box-hotel .name-hotel {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#hotel .grid-hotel .box-hotel .sub-hotel {
+  margin-left: 15px;
+  margin-top: -15px;
+  color: #a7a7a7;
+}
+
+#hotel .grid-hotel .box-hotel .btn-other {
+  margin-left: 15px;
+  color: #f10909;
+  text-decoration: none;
+}
+
+#travel {
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+}
+
+#travel .box-toptravel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#travel .box-toptravel .text-travel {
+  display: inline;
+}
+
+#travel .box-toptravel .btn-travel {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  width: 150px;
+  padding: 10px;
+  height: 50px;
+  color: #222;
+  border: 3px solid #ffe21f;
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: "Prompt";
+  font-size: 15px;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#travel .box-toptravel .btn-travel:hover {
+  background-color: #ffe21f;
+}
+
+#travel .grid-travel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#travel .grid-travel .box-travel {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  -webkit-box-shadow: -3px 0px 5px 0px #e0e0e0;
+          box-shadow: -3px 0px 5px 0px #e0e0e0;
+  padding-bottom: 20px;
+}
+
+#travel .grid-travel .box-travel img.img-travel {
+  width: 100%;
+  height: auto;
+}
+
+#travel .grid-travel .box-travel .sale-price {
+  position: relative;
+}
+
+#travel .grid-travel .box-travel .sale-price::before {
+  content: "ลด 5%";
+  background-color: #f10909;
+  width: 70px;
+  height: 25px;
+  margin-left: -92px;
+  border: 1px solid #f10909;
+  color: #fbfbfb;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+#travel .grid-travel .box-travel .name-travel {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#travel .grid-travel .box-travel .sub-travel {
+  margin-left: 15px;
+  margin-top: -15px;
+  color: #a7a7a7;
+}
+
+#travel .grid-travel .box-travel .btn-other {
+  margin-left: 15px;
+  color: #f10909;
+  text-decoration: none;
+}
+
+#promotionmonth {
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+}
+
+#promotionmonth .box-toppromotionmonth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#promotionmonth .box-toppromotionmonth .text-promotionmonth {
+  display: inline;
+}
+
+#promotionmonth .box-toppromotionmonth .btn-promotionmonth {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  width: 150px;
+  padding: 10px;
+  height: 50px;
+  color: #222;
+  border: 3px solid #ffe21f;
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: "Prompt";
+  font-size: 15px;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#promotionmonth .box-toppromotionmonth .btn-promotionmonth:hover {
+  background-color: #ffe21f;
+}
+
+#promotionmonth .grid-promotionmonth {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  -webkit-box-shadow: -3px 0px 5px 0px #e0e0e0;
+          box-shadow: -3px 0px 5px 0px #e0e0e0;
+  padding-bottom: 20px;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth img.img-promotionmonth {
+  width: 100%;
+  height: auto;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth .sale-price {
+  position: relative;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth .sale-price::before {
+  content: "ลด 5%";
+  background-color: #f10909;
+  width: 70px;
+  height: 25px;
+  margin-left: -92px;
+  border: 1px solid #f10909;
+  color: #fbfbfb;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth .name-promotionmonth {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth .sub-promotionmonth {
+  margin-left: 15px;
+  margin-top: -15px;
+  color: #a7a7a7;
+}
+
+#promotionmonth .grid-promotionmonth .box-promotionmonth .btn-other {
+  margin-left: 15px;
+  color: #f10909;
+  text-decoration: none;
+}
+
+#package {
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+  background-color: #fbfbfb;
+  padding-bottom: 4em;
+}
+
+#package .logo-top {
+  margin-top: 3em;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#package .name-package {
+  text-align: center;
+  font-size: 2em;
+  color: #222;
+  margin-top: 10px;
+}
+
+#package .sub-package {
+  text-align: center;
+  color: #a7a7a7;
+  margin-top: -20px;
+}
+
+#package .grid-package {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#package .grid-package .box-package {
+  margin-top: 4em;
+  border: 1px solid #eee;
+  -webkit-box-shadow: -3px 0px 5px 0px #e0e0e0;
+          box-shadow: -3px 0px 5px 0px #e0e0e0;
+}
+
+#package .grid-package .img-package {
+  width: 100%;
+  height: auto;
+}
+
+#package .grid-package .name-boxpackage {
+  margin-left: 15px;
+  color: #222;
+}
+
+#package .grid-package .sub-boxpackage {
+  margin-left: 15px;
+  margin-top: -10px;
+  color: #a7a7a7;
+}
+
+#package .grid-package .btn-other {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #f10909;
+}
+
+#package .grid-package .grid-detailspackage {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border-top: 2px solid #eee;
+  margin-top: 20px;
+}
+
+#package .grid-package .grid-detailspackage .dates-package {
+  margin-left: 15px;
+  display: inline;
+  text-align: center;
+  border-right: 2px solid #eee;
+}
+
+#package .grid-package .grid-detailspackage .box-star {
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#package .grid-package .grid-detailspackage .box-star .star1,
+#package .grid-package .grid-detailspackage .box-star .star2,
+#package .grid-package .grid-detailspackage .box-star .star3,
+#package .grid-package .grid-detailspackage .box-star .star4,
+#package .grid-package .grid-detailspackage .box-star .star5 {
+  color: #ffbb00;
+}
+
+#bg-promotion {
+  position: relative;
+}
+
+#bg-promotion .bg-promotion {
+  width: 100%;
+  height: auto;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  position: relative;
+}
+
+#bg-promotion .box-contentpromotion .name-bgpromotion {
+  top: 180px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  font-size: 2em;
+  color: #fbfbfb;
+}
+
+#bg-promotion .box-contentpromotion .sub-bgpromotion {
+  top: 250px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  font-size: 1.2em;
+  color: #fbfbfb;
+}
+
+#bg-promotion .box-contentpromotion .btn-booking {
+  top: 330px;
+  left: 42%;
+  -webkit-transform: translateX(-42%);
+          transform: translateX(-42%);
+  position: absolute;
+  border: 0;
+  padding: 10px;
+  color: #222;
+  background-color: #ffe21f;
+  font-family: "Prompt";
+  font-size: 16px;
+  width: 180px;
+  height: auto;
+  border-radius: 2px;
+}
+
+#bg-promotion .box-contentpromotion .btn-booking:hover {
+  background-color: #fcdc0d;
+}
+
+#bg-promotion .box-contentpromotion .btn-readmore {
+  top: 330px;
+  left: 58%;
+  width: 180px;
+  height: auto;
+  -webkit-transform: translateX(-58%);
+          transform: translateX(-58%);
+  position: absolute;
+  color: #222;
+  border: 0;
+  padding: 10px;
+  background-color: #f10909;
+  color: #fbfbfb;
+  font-family: "Prompt";
+  font-size: 16px;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+#bg-promotion .box-contentpromotion .btn-readmore:hover {
+  background-color: #f10404;
+}
+
+#comments {
+  width: 100%;
+  height: auto;
+  background-color: #fbfbfb;
+  padding-bottom: 30px;
+}
+
+#comments .logo-top {
+  margin-top: 5em;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#comments .name-comments {
+  text-align: center;
+  color: #222;
+  margin-top: 10px;
+  font-size: 2em;
+}
+
+#comments .sub-comments {
+  text-align: center;
+  color: #a7a7a7;
+  margin-top: -20px;
+}
+
+#comments .grid-comments {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  margin-top: 3em;
+}
+
+#comments .grid-comments .img-comment {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+#comments .grid-comments .box-comments {
+  width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  -webkit-box-shadow: -3px 0px 10px 0px #e0e0e0;
+          box-shadow: -3px 0px 10px 0px #e0e0e0;
+}
+
+#comments .grid-comments .box-comments .text-comment {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+#comments .grid-comments .box-comments .sub-textcomment {
+  margin-left: 10px;
+  color: #a7a7a7;
+  margin-top: -10px;
+}
+
+#comments .grid-comments .box-comments .btn-other {
+  margin-left: 10px;
+  color: #f10909;
+  text-decoration: none;
+}
+
+#bookings {
+  width: 100%;
+  height: auto;
+}
+
+#bookings .grid-bookings {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#bookings .grid-bookings .box-left {
+  margin-top: 2em;
+}
+
+#bookings .grid-bookings .box-left .logo-top {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#bookings .grid-bookings .box-left .text-bookings {
+  text-align: center;
+  font-size: 2em;
+  color: #f10909;
+  margin-bottom: 30px;
+}
+
+#bookings .grid-bookings .box-left .head-bookings {
+  color: #222;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#bookings .grid-bookings .box-left .sub-headbookings {
+  color: #a7a7a7;
+  margin-top: -10px;
+}
+
+#bookings .grid-bookings .bg-bookings {
+  width: 100%;
+  height: auto;
+}
+
+#gallery {
+  width: 100%;
+}
+
+#gallery .grid-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+}
+
+#gallery .grid-gallery .img-gallery {
+  width: 100%;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+#email {
+  margin-top: 20px;
+}
+
+#email .grid-email {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#email .grid-email .box-textemail .name-email {
+  text-align: center;
+}
+
+#email .grid-email .box-textemail .sub-email {
+  text-align: center;
+  margin-top: -10px;
+}
+
+#email .grid-email .form-controls {
+  padding: 10px;
+  width: 100%;
+  height: 30px;
+  font-family: "Prompt";
+  border: 0;
+  border: 2px solid #ffe21f;
+  margin-top: 30px;
+}
+
+#email .grid-email .box-btnemail {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#email .grid-email .box-btnemail .btn-email {
+  border: 0;
+  padding: 10px;
+  width: 180px;
+  height: 50px;
+  background-color: #ffe21f;
+  font-family: "Prompt";
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#footer {
+  width: 100%;
+  background-color: #ffe21f;
+  height: 45px;
+}
+
+#footer .name-footer {
+  text-align: center;
+  color: #222;
+  font-weight: 500;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */

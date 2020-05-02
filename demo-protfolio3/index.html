@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>Travel</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar-top">
+          <ul class="navbartop-right">
+            <li>
+              <a href="#"><i class="fas fa-bed"></i> โรงแรม</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-plane-departure"></i> เที่ยวบิน</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-car-alt"></i> รถยนต์</a>
+            </li>
+          </ul>
+          <ul class="navbartop-left">
+            <li>
+              <a href="#"><i class="fas fa-pencil-alt"></i> สมัครสมาชิก</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-sign-in-alt"></i> เข้าสู่ระบบ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="container">
+          <div class="nav">
+            <img src="assets/img/logo.png" class="img-logo" alt="" />
+            <div class="toggles" onclick="togglesOpen(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div href="#" class="dropdown">
+              <i class="fas fa-list"></i> หมวดหมู่
+              <div class="dropdown-content">
+                <li><a href="#">โรงแรม</a></li>
+                <li><a href="#">สถานที่ท่องเที่ยว</a></li>
+                <li><a href="#">เที่ยวในประเทศ</a></li>
+                <li><a href="#">เที่ยวต่างประเทศ</a></li>
+                <li><a href="#">รถยนต์</a></li>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-controls"
+              autocomplete="off"
+              placeholder="ค้นหาจุดหมายปลายทาง โรงแรม อื่นๆ "
+            />
+            <ul>
+              <li><a href="#">หน้าแรก</a></li>
+              <li><a href="#">ดาวน์โหลดแอป</a></li>
+              <li><a href="#">ศูนย์ช่วยเหลือ</a></li>
+              <li><a href="#">ตะกร้าสินค้า</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  -->
+    <section id="bg-hero">
+      <img src="assets/img/bg-header.png" class="img-bghero" alt="" />
+      <h1 class="name-hero">โรงแรมและที่พัก</h1>
+      <div class="checksbox-option">
+        <input type="checkbox" class="check1" name="check1" />
+        <label for="check1">จองโรงแรม</label>
+        <input type="checkbox" class="check2" name="check2" />
+        <label for="check2">จองตั๋วเครื่องบิน</label>
+        <input type="checkbox" class="check3" name="check3" />
+        <label for="check3">ค้นหาทัวร์</label>
+      </div>
+      <div class="box-search">
+        <input
+          type="text"
+          class="form-controls search"
+          autocomplete="off"
+          placeholder="ประเทศ, จังหวัด, สถานที่ท่องเที่ยว "
+        />
+        <input
+          type="text"
+          class="form-controls date-search"
+          autocomplete="off"
+          placeholder="วันเริ่มเดินทาง"
+        />
+        <input
+          type="text"
+          class="form-controls date-search2"
+          autocomplete="off"
+          placeholder="วันเดินทางกลับ"
+        />
+      </div>
+      <button class="btn-search"><i class="fas fa-search"></i> ค้นหา</button>
+    </section>
+
+    <!--  -->
+    <section id="text-hero">
+      <div class="container">
+        <div class="grid-texthero">
+          <span class="icon-checks"><i class="fas fa-check-circle"></i> </span>
+          <div class="box-texthero">
+            <h3 class="text-headhero">เรามีโรงแรมมากกว่าใคร</h3>
+            <p class="sub-textheadhero">
+              เปรียบเทียบเว็บไซต์จองโรงแรมชั้นนำทั้งหมดด้วย การค้นหาง่ายๆ
+              เพียงครั้งเดียว
+            </p>
+          </div>
+          <span class="icon-checks"><i class="fas fa-check-circle"></i> </span>
+          <div class="box-texthero">
+            <h3 class="text-headhero">รับประกันราคาดีที่สุด</h3>
+            <p class="sub-textheadhero">
+              ไม่มีค่าธรรมเนียมหรือค่าบริการ
+            </p>
+          </div>
+          <span class="icon-checks"><i class="fas fa-check-circle"></i> </span>
+          <div class="box-texthero">
+            <h3 class="text-headhero">ใครๆ ก็เลือกใช้บริการเรา</h3>
+            <p class="sub-textheadhero">
+              ปีที่ผ่านมามีนักเดินทางมากกว่า 400 ล้านคน
+              ไว้วางใจในการค้นหาดีลโรงแรมที่ดีที่สุดกับเรา
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="hotel">
+      <div class="container">
+        <div class="box-tophotel">
+          <h1 class="text-hotel">โรงแรมที่แนะนำ</h1>
+          <button class="btn-hotel">ดูเพิ่มเติม</button>
+        </div>
+        <div class="grid-hotel">
+          <div class="box-hotel">
+            <img src="assets/img/hotel-1.png" class="img-hotel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-hotel">โรงแรมสราญสิริ</h3>
+            <p class="sub-hotel">ฟรีอาหารเช้า อาหารเย็น</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-hotel">
+            <img src="assets/img/hotel-2.png" class="img-hotel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-hotel">โรงแรมสราญสิริ</h3>
+            <p class="sub-hotel">ฟรีอาหารเช้า อาหารเย็น</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-hotel">
+            <img src="assets/img/hotel-3.png" class="img-hotel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-hotel">โรงแรมสราญสิริ</h3>
+            <p class="sub-hotel">ฟรีอาหารเช้า อาหารเย็น</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-hotel">
+            <img src="assets/img/hotel-4.png" class="img-hotel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-hotel">โรงแรมสราญสิริ</h3>
+            <p class="sub-hotel">ฟรีอาหารเช้า อาหารเย็น</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="travel">
+      <div class="container">
+        <div class="box-toptravel">
+          <h1 class="text-travel">สถานที่ท่องเที่ยวที่แนะนำ</h1>
+          <button class="btn-travel">ดูเพิ่มเติม</button>
+        </div>
+        <div class="grid-travel">
+          <div class="box-travel">
+            <img src="assets/img/travel-1.png" class="img-travel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-travel">เกาะกูด 3 วัน 2 คืน</h3>
+            <p class="sub-travel">ท่องเที่ยวเกาะกูด</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-travel">
+            <img src="assets/img/travel-2.png" class="img-travel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-travel">เกาะกูด 3 วัน 2 คืน</h3>
+            <p class="sub-travel">ท่องเที่ยวเกาะกูด</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-travel">
+            <img src="assets/img/travel-3.png" class="img-travel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-travel">เกาะกูด 3 วัน 2 คืน</h3>
+            <p class="sub-travel">ท่องเที่ยวเกาะกูด</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-travel">
+            <img src="assets/img/travel-4.png" class="img-travel" alt="" />
+            <span class="sale-price"></span>
+            <h3 class="name-travel">เกาะกูด 3 วัน 2 คืน</h3>
+            <p class="sub-travel">ท่องเที่ยวเกาะกูด</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="promotionmonth">
+      <div class="container">
+        <div class="box-toppromotionmonth">
+          <h1 class="text-promotionmonth">โปรโมชันประจำเดือน</h1>
+          <button class="btn-promotionmonth">ดูเพิ่มเติม</button>
+        </div>
+        <div class="grid-promotionmonth">
+          <div class="box-promotionmonth">
+            <img
+              src="assets/img/promotion-1.png"
+              class="img-promotionmonth"
+              alt=""
+            />
+            <span class="sale-price"></span>
+            <h3 class="name-promotionmonth">เกาะช้าง 3 วัน 2 คืน</h3>
+            <p class="sub-promotionmonth">ท่องเที่ยวเกาะช้าง</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-promotionmonth">
+            <img
+              src="assets/img/promotion-2.png"
+              class="img-promotionmonth"
+              alt=""
+            />
+            <span class="sale-price"></span>
+            <h3 class="name-promotionmonth">เกาะช้าง 3 วัน 2 คืน</h3>
+            <p class="sub-promotionmonth">ท่องเที่ยวเกาะช้าง</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-promotionmonth">
+            <img
+              src="assets/img/promotion-3.png"
+              class="img-promotionmonth"
+              alt=""
+            />
+            <span class="sale-price"></span>
+            <h3 class="name-promotionmonth">เกาะช้าง 3 วัน 2 คืน</h3>
+            <p class="sub-promotionmonth">ท่องเที่ยวเกาะช้าง</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <div class="box-promotionmonth">
+            <img
+              src="assets/img/promotion-4.png"
+              class="img-promotionmonth"
+              alt=""
+            />
+            <span class="sale-price"></span>
+            <h3 class="name-promotionmonth">เกาะช้าง 3 วัน 2 คืน</h3>
+            <p class="sub-promotionmonth">ท่องเที่ยวเกาะช้าง</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="package">
+      <div class="container">
+        <img src="assets/img/logo-top.png" class="logo-top" alt="" />
+        <h1 class="name-package">แพ็คเกจทัวร์</h1>
+        <p class="sub-package">
+          เรารวบรวมแพ็คเกจทัวร์ราคาพิเศษไว้ให้ผู้ที่สนใจเลือกชมมากมาย
+        </p>
+        <div class="grid-package">
+          <div class="box-package">
+            <img src="assets/img/package-1.png" class="img-package" alt="" />
+            <h3 class="name-boxpackage">แพ็คเกจมา 4 จ่าย 3</h3>
+            <p class="sub-boxpackage">พายเรือท่องเที่ยวเกาสมุย</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+            <div class="grid-detailspackage">
+              <p class="dates-package">3 วัน 2 คืน</p>
+              <div class="box-star">
+                <span class="star1"><i class="fas fa-star"></i></span>
+                <span class="star2"><i class="fas fa-star"></i></span>
+                <span class="star3"><i class="fas fa-star"></i></span>
+                <span class="star4"><i class="fas fa-star"></i></span>
+                <span class="star5"><i class="fas fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="box-package">
+            <img src="assets/img/package-2.png" class="img-package" alt="" />
+            <h3 class="name-boxpackage">แพ็คเกจมา 4 จ่าย 3</h3>
+            <p class="sub-boxpackage">พายเรือท่องเที่ยวเกาสมุย</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+            <div class="grid-detailspackage">
+              <p class="dates-package">3 วัน 2 คืน</p>
+              <div class="box-star">
+                <span class="star1"><i class="fas fa-star"></i></span>
+                <span class="star2"><i class="fas fa-star"></i></span>
+                <span class="star3"><i class="fas fa-star"></i></span>
+                <span class="star4"><i class="fas fa-star"></i></span>
+                <span class="star5"><i class="fas fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="box-package">
+            <img src="assets/img/package-3.png" class="img-package" alt="" />
+            <h3 class="name-boxpackage">แพ็คเกจมา 4 จ่าย 3</h3>
+            <p class="sub-boxpackage">พายเรือท่องเที่ยวเกาสมุย</p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+            <div class="grid-detailspackage">
+              <p class="dates-package">3 วัน 2 คืน</p>
+              <div class="box-star">
+                <span class="star1"><i class="fas fa-star"></i></span>
+                <span class="star2"><i class="fas fa-star"></i></span>
+                <span class="star3"><i class="fas fa-star"></i></span>
+                <span class="star4"><i class="fas fa-star"></i></span>
+                <span class="star5"><i class="fas fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="bg-promotion">
+      <img src="assets/img/bg-promotion.png" class="bg-promotion" alt="" />
+      <div class="box-contentpromotion">
+        <h1 class="name-bgpromotion">โปรโมชันมา 10 ฟรี 1 จองเลย !!</h1>
+        <p class="sub-bgpromotion">ท่องเที่ยวจังหวัดภูเก็ต</p>
+        <button class="btn-booking">จองเลย</button>
+        <button class="btn-readmore">อ่านรายละเอียดเพิ่มเติม</button>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="comments">
+      <div class="container">
+        <img src="assets/img/logo-top.png" class="logo-top" alt="" />
+        <h1 class="name-comments">ประสบการณ์ยอดนิยม</h1>
+        <p class="sub-comments">
+          เรารวบรวมประสบการณ์และความคิดเห็นของผู้ใช้ที่ได้ไปเที่ยวกับทางเรา
+        </p>
+        <div class="grid-comments">
+          <img src="assets/img/comments-1.png" class="img-comment" alt="" />
+          <div class="box-comments">
+            <h1 class="text-comment">ความคิดเห็นผู้ท่องเที่ยวภูเก็ต</h1>
+            <p class="sub-textcomment">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบ เรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรือ งานเรียงพิมพ์
+            </p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <img src="assets/img/comments-2.png" class="img-comment" alt="" />
+          <div class="box-comments">
+            <h1 class="text-comment">
+              ความคิดเห็นผู้ท่องเที่ยวชลบุรี
+            </h1>
+            <p class="sub-textcomment">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบ เรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรือ งานเรียงพิมพ์
+            </p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <img src="assets/img/comments-3.png" class="img-comment" alt="" />
+          <div class="box-comments">
+            <h1 class="text-comment">ความคิดเห็นผู้ท่องเที่ยวระยอง</h1>
+            <p class="sub-textcomment">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบ เรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรือ งานเรียงพิมพ์
+            </p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+          <img src="assets/img/comments-4.png" class="img-comment" alt="" />
+          <div class="box-comments">
+            <h1 class="text-comment">ความคิดเห็นผู้ท่องเที่ยวต่าง ประเทศ</h1>
+            <p class="sub-textcomment">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบ เรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรือ งานเรียงพิมพ์
+            </p>
+            <a href="#" class="btn-other">อ่านเพิ่มเติม</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="bookings">
+      <div class="container">
+        <div class="grid-bookings">
+          <div class="box-left">
+            <img src="assets/img/logo-top.png" class="logo-top" alt="" />
+            <h1 class="text-bookings">ทำไมต้องจองกับเรา</h1>
+            <p class="head-bookings">เรามีไกด์ที่เป็นผู้เชี่ยวชาญจำนวนมาก</p>
+            <p class="sub-headbookings">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์
+            </p>
+            <p class="head-bookings">เรามีที่พักที่มีคุณภาพ</p>
+            <p class="sub-headbookings">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์
+            </p>
+            <p class="head-bookings">เรามีรถบัสจัดส่งในทัวร์ต่างๆ</p>
+            <p class="sub-headbookings">
+              Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ
+              ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์
+            </p>
+          </div>
+          <img src="assets/img/bg-booking.png" class="bg-bookings" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="gallery">
+      <div class="grid-gallery">
+        <img src="assets/img/gallery-1.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-2.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-3.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-4.png" class="img-gallery" alt="" /><img
+          src="assets/img/gallery-5.png"
+          class="img-gallery"
+          alt=""
+        /><img src="assets/img/gallery-6.png" class="img-gallery" alt="" /><img
+          src="assets/img/gallery-7.png"
+          class="img-gallery"
+          alt=""
+        /><img src="assets/img/gallery-8.png" class="img-gallery" alt="" /><img
+          src="assets/img/gallery-9.png"
+          class="img-gallery"
+          alt=""
+        />
+        <img src="assets/img/gallery-10.png" class="img-gallery" alt="" />
+        <img src="assets/img/gallery-11.png" class="img-gallery" alt="" />
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="email">
+      <div class="container">
+        <div class="grid-email">
+          <div class="box-textemail">
+            <h1 class="name-email">ติดตามเรา</h1>
+            <p class="sub-email">ติดตามเราเพื่อรับข้อมูลข่าวสาร</p>
+          </div>
+          <input
+            type="text"
+            class="form-controls"
+            autocomplete="off"
+            placeholder="กรุณากรอกอีเมลของท่าน"
+          />
+          <div class="box-btnemail">
+            <button class="btn-email">
+              <i class="fas fa-envelope"></i> สมัครรับข้อมูลข่าวสาร
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section id="footer">
+      <p class="name-footer">
+        DEMO PORTFOLIO - © Copyright 2020. All Rights Reserved.
+      </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
