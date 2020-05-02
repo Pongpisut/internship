@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:300&display=swap');
+// 
+$fonts:('Kanit', sans-serif);
+$color:#01b7f2;
+
+// 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: $fonts;
+    font-size: 15px;
+}
+
+#header-firstnav {
+    width: 100%;
+    height: auto;
+    background: #1A4797;
+    margin-left: auto;
+
+    .menu-top {
+        margin-right: 40px;
+    }
+
+    .text-headertop {
+        font-size: 15px;
+        color: #FFF;
+        margin-top: 5px;
+    }
+
+    span {
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}
+
+#bg-header {
+    width: 100%;
+    height: 100%;
+
+    .contents {
+        width: 100%;
+        text-align: center;
+        margin: 1em 0 1em;
+
+
+        h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 4.5em;
+            text-transform: uppercase;
+            color: #1A4797;
+            letter-spacing: 0.0em;
+            text-shadow: 1px 1px #1A4797;
+        }
+
+        p {
+            font-size: 1.3em;
+            text-transform: uppercase;
+            color: #000;
+            letter-spacing: 0.1em;
+            // text-shadow: 2px 2px 000;
+        }
+    }
+}
+
+#package {
+    width: 100%;
+    height: auto;
+    background: #1A4797;
+    padding-bottom: 2em;
+
+    .box-package a {
+        color: #2e2e2e;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+}
+
+#img-experience {
+    width: 100%;
+    height: auto;
+    background: #f0f4f9;
+    cursor: pointer;
+
+    h2 {
+        margin-top: 2em;
+        font-weight: 500;
+        color: $color;
+    }
+}
+
+#service {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    cursor: pointer;
+}
+
+#note {
+    width: 100%;
+    height: 100%;
+    margin-top: 4em;
+    background: url('../img/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .box-note {
+        width: 100%;
+        height: 350px;
+        margin-top: 3em;
+        padding: 0.5em 0.5em;
+        margin-bottom: 7em;
+        color: rgb(245, 245, 245);
+        font-size: 16px;
+
+        img:hover {
+            animation: bounceIn 0.2s;
+        }
+    }
+}
+
+#product {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+
+    .name-product {
+        color: $color;
+        font-weight: 600;
+    }
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    border-top: 8px solid #1A4797;
+    margin-top: 3em;
+    margin-bottom: 0.5em;
+
+    img {
+        padding: 1em 1em;
+    }
+
+    p {
+        color: rgb(90, 90, 90);
+    }
+}
+
+// other
+.lineheader {
+    border-right: 8px solid #FFF;
+    margin-right: 20px;
+}
+
+.text-head {
+    color: #FFF;
+    margin-top: 2em;
+}
+
+.text-p {
+    color: #FFF;
+    margin-top: 1em;
+    font-size: 17px;
+    padding-left: 35px;
+    margin-bottom: 2em;
+}
+
+.lineheader-bgwhite {
+    border-right: 8px solid $color;
+    margin-right: 20px;
+}
+
+.text-head-bgwhite {
+    color: $color;
+    margin-top: 2em;
+}
+
+.text-p-bgwhite {
+    color: rgb(110, 110, 110);
+    margin-top: 1em;
+    font-size: 17px;
+    padding-left: 35px;
+    margin-bottom: 2em;
+}
+
+#toTop {
+    padding: 10px 10px;
+    background: #3c3d3e;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    display: none;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#toTop i {
+    display: block;
+    text-align: center;
+}
+
+// Responsive
+@media only screen and (max-width:760px) and (min-width:320px) {
+    #header-firstnav {
+        .menu-top {
+            padding-left: 30px;
+        }
+    }
+
+    #bg-header {
+        .contents {
+            h2 {
+                font-size: 25px;
+                margin-top: 1em;
+            }
+
+            p {
+                font-size: 15px;
+                text-align: left;
+                padding: 1em 1em;
+            }
+        }
+    }
+
+    #note {
+        height: 1700px;
+
+        .box-note {
+            margin-bottom: 0.5em;
+
+            img {
+                width: 250px;
+                height: 250px;
+
+            }
+        }
+    }
+
+
+    .text-head {
+        font-size: 20px;
+    }
+
+    .text-p {
+        font-size: 15px;
+    }
+
+    .text-head-bgwhite {
+        font-size: 20px;
+    }
+
+    .text-p-bgwhite {
+        font-size: 15px;
+    }
+
+    .navbar-brand img {
+        width: 160px;
+        height: 40px;
+    }
+
+}
+
+@media screen and(max-width:330px) {
+    .text-head-bgwhite {
+        font-size: 16px;
+    }
+
+}
